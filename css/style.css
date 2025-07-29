@@ -89,6 +89,13 @@ nav ul li:hover {
     position: relative;
 }
 
+/* brands section styles */
+.scrolling-wrapper {
+    animation: scrollLeft 30s linear infinite;
+}
+
+
+
 /* contact form styles */
 .form-input:focus {
     outline: 1px solid var(--primary-color)
@@ -103,4 +110,14 @@ nav ul li:hover {
 .footer-icons i {
     background-color: #fff;
     border-radius: 50%
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
 }
