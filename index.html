@@ -46,14 +46,14 @@
 
         <!-- Hero Section -->
         <section id="hero-section" class="relative h-screen bg-cover bg-center bg-no-repeat">
-            <div class="relative w-full h-full">
-                <div class="absolute left-4 right-4 md:left-24 top-1/2 transform -translate-y-1/2 max-w-xl">
+            <div class="relative w-full h-full flex justify-between max-w-7xl items-center mx-auto">
+                <div class="max-w-xl text-left space-y-4">
                     <h1 class="text-white text-2xl md:text-3xl font-bold leading-tight mb-4">
                         Get your Corporate Tax Return filed with
                         <span class="text-[var(--primary-color)]">100% compliance</span>
                         by trusted UAE tax experts.
                     </h1>
-                    <h2 class="text-white text-2xl md:text-3xl font-semibold mb-4">
+                    <h2 class="text-white text-xl md:text-2xl font-semibold mb-4">
                         Corporate Tax Filing Now at Just
                         <span class="text-[var(--primary-color)]">AED 999!</span>
                     </h2>
@@ -69,7 +69,32 @@
                     </a>
                 </div>
 
-                <!-- image section -->
+                <!-- form-section -->
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl font-semibold text-center text-white">Get A Free Consultation!</h2>
+                    <form action="" class="bg-white  p-6 rounded-lg">
+                        <div class="input-container flex flex-col gap-6">
+                            <input type="text" placeholder="Full Name"
+                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                                required />
+                            <input type="text" placeholder="Company Name"
+                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                                required />
+                            <input type="tel" placeholder="Phone Number"
+                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                                required />
+                            <input type="email" placeholder="Email Address"
+                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                                required />
+                            <p class="text-sm">I accept the Terms and Conditions.<br /> <span class="text-red-500">
+                                    Privacy Policy </span>& <span class="text-red-500">Terms & Conditions
+                                </span></p>
+                            <button type="submit" class="button rounded-md">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
             </div>
         </section>
