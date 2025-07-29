@@ -27,6 +27,20 @@ body {
     outline: 1px solid var(--primary-color);
 }
 
+.whatsapp-button {
+    background-color: #25d366;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.whatsapp-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 .header {
     background: transparent;
     padding: 20px;
