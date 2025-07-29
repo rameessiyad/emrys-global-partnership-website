@@ -11,6 +11,11 @@ body {
     --text-paragraph-color: #222222;
 }
 
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff
+}
+
 
 .button {
     background-color: var(--primary-color);

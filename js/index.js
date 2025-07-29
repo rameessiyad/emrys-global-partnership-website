@@ -19,18 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if (el !== icon) el.textContent = "+";
       });
       allToggles.forEach((el) => {
-        if(el !== toggleBtn) el.classList.remove("text-[var(--primary-color)]")
+        if(el !== toggleBtn) el.classList.remove("bg-primary")
       })
 
       // Toggle clicked one
       if (isOpen) {
         content.style.maxHeight = null;
         icon.textContent = "+";
-        toggleBtn.classList.remove("text-[var(--primary-color)]")
+        toggleBtn.classList.remove("bg-primary")
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
         icon.textContent = "–";
-        toggleBtn.classList.add("text-[var(--primary-color)]")
+        toggleBtn.classList.add("bg-primary")
       }
     });
   });
