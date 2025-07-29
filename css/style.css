@@ -1,0 +1,105 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* variables */
+:root {
+    --primary-color: #f45c2c;
+    --main-color: #293742cc;
+    --secondary-color: #2c3b94;
+    --text-head-color: #23282d;
+    --text-paragraph-color: #222222;
+}
+
+
+.button {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    outline: 1px solid var(--primary-color);
+}
+
+.header {
+    background: transparent;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: all ease 0.3s;
+}
+
+.text-head {
+    color: var(--text-head-color);
+}
+
+.text-p {
+    color: var(--text-paragraph-color);
+}
+
+.no-scrollbar ::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+nav ul li:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-underline {
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-underline:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+/* hero section style */
+#hero-section {
+    background-image:
+        linear-gradient(rgba(1, 1, 78, 0.236), rgba(2, 2, 29, 0.367)),
+        url("../assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* contact form styles */
+.form-input:focus {
+    outline: 1px solid var(--primary-color)
+}
+
+/* footer styles */
+.footer {
+    background-color: #30353a;
+    padding: 20px 50px 20px;
+}
+
+.footer-icons i {
+    background-color: #fff;
+    border-radius: 50%
+}

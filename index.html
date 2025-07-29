@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emrys Global</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind css cdn link    -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/brands.min.css"
+        integrity="sha512-mXqwRsOznG7CS37KA7CLR1Fc72gfOgp7r8xaVdBKoBKhitcKI/mK+IamtZUf+FAkufXOvVTESu9lPsoQc+kFxg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="h-screen">
+        <!-- header-section -->
+        <header class="header hidden md:block">
+            <!-- navbar-section -->
+
+            <!-- navbar-1 -->
+            <nav class=" flex justify-center items-center gap-24">
+                <a href=""><img src="./assets/logo.svg" alt="logo" width="224px" height="100px"></a>
+                <ul class="flex items-center justify-between gap-8">
+                    <li class="text-white font-bold">Accounting & Audit</li>
+                    <li class="text-white font-bold">VAT & Corporate Tax</li>
+                    <li class="text-white font-bold">Business Setup</li>
+                    <li class="text-white font-bold">Services</li>
+                    <li class="text-white font-bold nav-underline">Contacts</li>
+                </ul>
+            </nav>
+
+            <!-- navbar-2 -->
+        </header>
+
+        <!-- hero section -->
+        <section id="hero-section" class="relative h-screen bg-cover bg-center bg-no-repeat">
+            <div class="relative w-full h-full">
+                <div class="absolute left-4 right-4 md:left-24 top-1/2 transform -translate-y-1/2 max-w-full">
+                    <h1 class="text-white text-3xl md:text-5xl font-bold leading-tight">
+                        Partnership Firm Registration<br />
+                        in Kerala
+                    </h1>
+                    <button class="button mt-6">Get the right support</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact form section -->
+        <section class="contact-form py-12 px-6 md:px-20">
+            <h2 class="text-center mb-10 text-2xl md:text-3xl">
+                Connect With Us!
+            </h2>
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-center gap-10 text-left text-black max-w-6xl mx-auto">
+                <!-- Form Section -->
+                <div class="w-full md:w-1/2">
+                    <form class="flex flex-col gap-4">
+                        <div>
+                            <label class="block mb-1">Your name</label>
+                            <input type="text" class="w-full border border-gray-300 px-4 py-2 rounded-md form-input" />
+                        </div>
+                        <div>
+                            <label class="block mb-1">Your email</label>
+                            <input type="email" class="w-full border border-gray-300 px-4 py-2 rounded-md form-input" />
+                        </div>
+                        <div>
+                            <label class="block mb-1">Your message</label>
+                            <textarea rows="4"
+                                class="w-full border border-gray-300 px-4 py-2 rounded-md form-input"></textarea>
+                        </div>
+                        <button type="submit" class="button w-fit cursor-pointer">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Image Section -->
+                <div class="w-full md:w-1/2">
+                    <img src="./assets/contactfom.jpg" alt="Contact" class="w-full max-w-md mx-auto md:mx-0" />
+                </div>
+            </div>
+        </section>
+        <!-- footer-section -->
+        <footer class="footer text-white flex flex-col text-left  items-center">
+            <!-- Main container -->
+            <div class="flex flex-col md:flex-row gap-10 md:gap-20 py-10 md:w-[80%] w-full px-4">
+                <!-- Logo + Address -->
+                <div class="flex flex-col gap-6 md:w-1/5 w-full items-center md:items-start text-center md:text-left">
+                    <img src="./assets/logo.svg" alt="logo" class="w-[200px] h-auto mx-auto md:mx-0" />
+                    <div class="flex flex-col">
+                        <p>
+                            Office No 25, 26th Floor,<br />
+                            Al Moosa Tower 2, Sheikh Zayed Road, Dubai
+                        </p>
+                        <div class="flex flex-col mt-2">
+                            <span>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:info@emrysglobal.ae"
+                                    class="hover:underline ml-1">info@emrysglobal.ae</a>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-phone-flip"></i>
+                                <a href="tel:+971505791242" class="hover:underline ml-1">+971 50 579 1242</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex flex-col gap-6 w-full md:w-auto items-center md:items-start text-center md:text-left">
+                    <h1 class="text-xl font-semibold">QUICK LINKS</h1>
+                    <ul>
+                        <li class="mb-2"><a href="">Home</a></li>
+                        <li class="mb-2"><a href="">Blogs</a></li>
+                        <li class="mb-2"><a href="">Contact Us</a></li>
+                        <li class="mb-2"><a href="">Our Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="flex flex-col gap-6 w-full md:w-auto items-center md:items-start text-center md:text-left">
+                    <h1 class="text-xl font-semibold">SERVICES</h1>
+                    <ul>
+                        <li class="mb-2"><a href="">Accounting & Bookkeeping</a></li>
+                        <li class="mb-2"><a href="">Audit & Assurance</a></li>
+                        <li class="mb-2"><a href="">Business Setup</a></li>
+                        <li class="mb-2"><a href="">Corporate Tax Services</a></li>
+                        <li class="mb-2"><a href="">VAT Services</a></li>
+                        <li class="mb-2"><a href="">AML Compliance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div class="flex flex-col gap-6 w-full md:w-auto items-center md:items-start text-center md:text-left">
+                    <h1 class="text-xl font-semibold">POLICIES</h1>
+                    <ul>
+                        <li class="mb-2"><a href="">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="w-[80%] " />
+
+            <!-- Bottom section -->
+            <div
+                class="flex flex-col md:flex-row justify-between items-center w-[80%] mt-6 gap-4 text-center md:text-left">
+                <p>Copyright © 2025 Emrys Global</p>
+                <div class="text-black flex gap-3">
+                    <div class="bg-white rounded-full w-7 h-7 flex justify-center items-center">
+                        <a href="https://www.linkedin.com/company/emrys-global/"><i
+                                class="fa-brands fa-linkedin-in w-3"></i></a>
+                    </div>
+                    <div class="bg-white rounded-full w-7 h-7 flex justify-center items-center">
+                        <a href="https://www.facebook.com/emrystax.ae"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="bg-white rounded-full w-7 h-7 flex justify-center items-center">
+                        <a href="https://www.instagram.com/emrystax.ae/"><i class="fa-brands fa-instagram w-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+        integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
