@@ -96,7 +96,7 @@ nav ul li:hover {
 }
 
 /* hero section style */
-#hero-section {
+.hero-section {
     /* background-image:
         linear-gradient(rgba(1, 1, 78, 0.236), rgba(2, 2, 29, 0.367)),
         url("../assets/hero.jpg");
