@@ -16,8 +16,8 @@ html {
 }
 
 .bg-primary {
-  background-color: var(--primary-color);
-  color: #fff
+    background-color: var(--primary-color);
+    color: #fff
 }
 
 
@@ -114,10 +114,12 @@ nav ul li:hover {
 
 /* brands section styles */
 .scrolling-wrapper {
-    animation: scrollLeft 30s linear infinite;
+    animation: scrollRight 30s linear infinite;
 }
 
-
+.row-2.scrolling-wrapper {
+    animation: scrollLeft 30s linear infinite;
+}
 
 /* contact form styles */
 .form-input:focus {
@@ -135,12 +137,22 @@ nav ul li:hover {
     border-radius: 50%
 }
 
-@keyframes scrollLeft {
+@keyframes scrollRight {
     0% {
         transform: translateX(0);
     }
 
     100% {
         transform: translateX(50%);
+    }
+}
+
+@keyFrames scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }
