@@ -23,42 +23,82 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="relative">
+    <div
+        class="hidden md:fixed cta-button left-0 top-50 z-50 flex flex-col gap-6 items-center bg-[var(--primary-color)] px-2 py-6 text-white rounded-r-xl">
+        <a href=""><i class="fa-brands fa-whatsapp text-xl text-white"></i></a>
+        <a href="tel:+91 9876543210"><i class="fa-solid fa-phone text-xl text-white"></i></a>
+    </div>
+
     <div class="h-screen">
         <!-- header-section -->
         <header class="header hidden md:block">
             <!-- navbar-section -->
 
             <!-- navbar-1 -->
-            <nav class=" flex justify-center items-center gap-24">
-                <a href=""><img src="./assets/logo.svg" alt="logo" width="224px" height="100px"></a>
+            <nav class=" flex justify-between max-w-7xl items-center gap-24 mx-auto">
+                <a href=""><img src="./assets/logo-cropped.svg" alt="logo" width="170px" height="100px"></a>
                 <ul class="flex items-center justify-between gap-8">
                     <a href="#home">
-                        <li class="text-white font-bold">Home</li>
+                        <li class="text-white font-bold nav-underline">Home</li>
                     </a>
                     <a href="#why-the-corporate">
-                        <li class="text-white font-bold">Why The Corporate</li>
+                        <li class="text-white font-bold nav-underline">Why The Corporate</li>
                     </a>
                     <a href="#our-plans">
-                        <li class="text-white font-bold">Our Plans</li>
+                        <li class="text-white font-bold nav-underline">Our Plans</li>
                     </a>
-                    <a href="">
-                        <li class="text-white font-bold">Services</li>
+                    <a href="#trusted-brands">
+                        <li class="text-white font-bold nav-underline">Trusted Brands</li>
                     </a>
-                    <a href="">
-                        <li class="text-white font-bold nav-underline">Contact</li>
+                    <a href="#why-emrys">
+                        <li class="text-white font-bold nav-underline">Why Emrys</li>
+                    </a>
+                    <a href="#faq">
+                        <li class="text-white font-bold nav-underline">FAQ</li>
                     </a>
                 </ul>
+                <div class="bg-[var(--primary-color)] px-4 py-2 flex items-center justify-center rounded-full">
+                    <a href="tel:+971 50 579 1242" class="text-xs font-bold text-white">+971 50 579 1242</a>
+                </div>
             </nav>
 
-            <!-- navbar-2 -->
+
+
+        </header>
+
+        <!-- mobile navbar  -->
+        <header class="mobile-navbar md:hidden bg-[var(--secondary-color)] p-4 h-18 z-50 fixed w-full">
+            <nav class="flex items-center justify-between gap-4">
+                <a href=""><img src="./assets/logo-cropped.svg" alt="logo" width="100px" height="100px"></a>
+                <div class="flex items-center gap-2">
+                    <a href="tel:+971 50 579 1242" class="text-xs font-bold text-white">+971 50 579 1242</a>
+                    <div id="menuToggle"
+                        class="bg-[var(--primary-color)] p-2 flex items-center justify-center rounded-full cursor-pointer">
+                        <i class="fa fa-bars text-white"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="mobileNavLinks"
+                class="mobile-menu-wrapper overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out flex-col bg-[var(--secondary-color)] text-white p-4 space-y-4">
+                <a href="#home" class="block focus:text-[var(--primary-color)]">Home</a>
+                <a href="#why-the-corporate" class="block focus:text-[var(--primary-color)]">Why The Corporate</a>
+                <a href="#our-plans" class="block focus:text-[var(--primary-color)]">Our Plans</a>
+                <a href="#trusted-brands" class="block focus:text-[var(--primary-color)]">Trusted Brands</a>
+                <a href="#why-emrys" class="block focus:text-[var(--primary-color)]">Why Emrys</a>
+                <a href="#faq" class="block focus:text-[var(--primary-color)]">FAQ</a>
+            </div>
+
         </header>
 
         <!-- Hero Section -->
-        <section id="home" class="hero-section relative h-screen bg-cover bg-center bg-no-repeat">
+        <section id="home" class=" hero-section relative  px-4 ">
             <div
-                class="relative w-full h-full flex flex-col md:flex-row justify-between max-w-7xl items-center mx-auto">
-                <div class="max-w-xl text-left space-y-4">
+                class="relative w-full h-full flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-10">
+
+                <!-- Text Content -->
+                <div class="max-w-xl text-left space-y-4 mt-12 md:mt-0">
                     <h1 class="text-white text-2xl md:text-3xl font-bold leading-tight mb-4">
                         Get your Corporate Tax Return filed with
                         <span class="text-[var(--primary-color)]">100% compliance</span>
@@ -72,78 +112,62 @@
                         <em>UAE Mainland & Free Zone Companies – Limited-Time Offer</em>
                     </p>
                     <p class="text-white text-lg font-medium mb-6">
-                        <span class="text-white py-1 rounded">Book Free
-                            Consultation</span>
+                        <span class="text-white py-1 rounded">Book Free Consultation</span>
                     </p>
                     <a href="https://wa.me/YOURNUMBER" target="_blank">
                         <button class="button">Chat on WhatsApp</button>
                     </a>
                 </div>
 
+                <!-- Hero Image -->
                 <img src="./assets/hero.png" alt="hero-img"
-                    class="hidden md:block w-[300px] md:w-[500px] lg:w-[600px] self-end">
+                    class="hidden md:block w-[300px] md:w-[500px] lg:w-[600px] self-end mt-auto">
 
-                <!-- form-section -->
-                <div class="flex flex-col gap-2">
-                    <h2 class="text-xl font-semibold text-center text-white">Get A Free Consultation!</h2>
-                    <form action="" class="bg-white  p-6 rounded-lg">
-                        <div class="input-container flex flex-col gap-6">
-                            <input type="text" placeholder="Full Name"
-                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
-                                required />
-                            <input type="text" placeholder="Company Name"
-                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
-                                required />
-                            <input type="tel" placeholder="Phone Number"
-                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
-                                required />
-                            <input type="email" placeholder="Email Address"
-                                class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
-                                required />
-                            <select
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
-                                required>
-                                <option value="" disabled selected>Select The Service</option>
-                                <option value="Corporate Tax Advisory Services">Corporate Tax Advisory Services
-                                </option>
-                                <option value="Corporate Tax Filing">Corporate Tax Filing
-                                </option>
-                                <option value="Corporate Tax Registration Service">Corporate Tax Registration Service
-                                </option>
-                                <option value="Corporate Registration for VAT">Corporate Registration for VAT
-                                </option>
-                                <option value="Anti-Money Laundering Registration">Anti-Money Laundering Registration
-                                </option>
-                                <option value="Audit">Audit
-                                </option>
-                                <option value="De-registration for VAT">De-registration for VAT
-                                </option>
-                                <option value="Registration Of VAT">Registration Of VAT
-                                </option>
-                                <option value="Tax Agency Service">Tax Agency Service
-                                </option>
-                                <option value="Tax Residency Certificate (TRC)">Tax Residency Certificate (TRC)
-                                </option>
-                                <option value="VAT Health Check">VAT Health Check
-                                </option>
-                                <option value="VAT Refund">VAT Refund
-                                </option>
-                                <option value="VAT Services">VAT Services
-                                </option>
-                            </select>
-                            <p class="text-xs text-center">I accept the Terms and Conditions.<br /> <span
-                                    class="text-red-500">
-                                    Privacy Policy </span>& <span class="text-red-500">Terms & Conditions
-                                </span></p>
-                            <button type="submit" class="button rounded-md">
-                                Submit
-                            </button>
-                        </div>
+                <!-- Form Section -->
+                <div class="w-full sm:w-[90%] md:w-[400px] lg:w-[420px] bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-lg font-semibold text-center text-gray-800 mb-4">Get A Free Consultation!</h2>
+                    <form class="flex flex-col gap-4">
+                        <input type="text" placeholder="Full Name"
+                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            required />
+                        <input type="text" placeholder="Company Name"
+                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            required />
+                        <input type="tel" placeholder="Phone Number"
+                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            required />
+                        <input type="email" placeholder="Email Address"
+                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            required />
+                        <select
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            required>
+                            <option value="" disabled selected>Select The Service</option>
+                            <option>Corporate Tax Advisory Services</option>
+                            <option>Corporate Tax Filing</option>
+                            <option>Corporate Tax Registration Service</option>
+                            <option>Corporate Registration for VAT</option>
+                            <option>Anti-Money Laundering Registration</option>
+                            <option>Audit</option>
+                            <option>De-registration for VAT</option>
+                            <option>Registration Of VAT</option>
+                            <option>Tax Agency Service</option>
+                            <option>Tax Residency Certificate (TRC)</option>
+                            <option>VAT Health Check</option>
+                            <option>VAT Refund</option>
+                            <option>VAT Services</option>
+                        </select>
+                        <p class="text-xs text-center text-gray-600">
+                            I accept the Terms and Conditions.<br />
+                            <span class="text-red-500">Privacy Policy</span> &
+                            <span class="text-red-500">Terms & Conditions</span>
+                        </p>
+                        <button type="submit" class="button rounded-md">Submit</button>
                     </form>
                 </div>
-
             </div>
         </section>
+
 
         <!-- why the corporate section -->
         <section id="why-the-corporate" class="py-12 bg-indigo-50">
@@ -613,7 +637,7 @@
         </section>
 
         <!-- whats included in offer section -->
-        <section id="whats-included" class="py-12">
+        <section id="why-emrys" class="py-12">
             <div class="max-w-7xl mx-auto">
                 <h1 class="text-center text-2xl md:text-4xl font-bold text-head my-8 md:my-16">
                     Why Choose Emrys for Your First Corporate Tax Filing?

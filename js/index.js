@@ -1,3 +1,22 @@
+// navbar toggle
+const menuToggle = document.getElementById("menuToggle");
+const mobileNavLinks = document.getElementById("mobileNavLinks");
+
+let isOpen = false;
+
+menuToggle.addEventListener("click", () => {
+  isOpen = !isOpen;
+
+  if (isOpen) {
+    mobileNavLinks.classList.remove("max-h-0", "opacity-0");
+    mobileNavLinks.classList.add("max-h-[500px]", "opacity-100");
+  } else {
+    mobileNavLinks.classList.remove("max-h-[500px]", "opacity-100");
+    mobileNavLinks.classList.add("max-h-0", "opacity-0");
+  }
+});
+
+// faq toggle
 document.addEventListener("DOMContentLoaded", () => {
   const faqToggles = document.querySelectorAll(".faq-toggle");
 
@@ -19,18 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if (el !== icon) el.textContent = "+";
       });
       allToggles.forEach((el) => {
-        if(el !== toggleBtn) el.classList.remove("bg-primary")
-      })
+        if (el !== toggleBtn) el.classList.remove("bg-primary");
+      });
 
       // Toggle clicked one
       if (isOpen) {
         content.style.maxHeight = null;
         icon.textContent = "+";
-        toggleBtn.classList.remove("bg-primary")
+        toggleBtn.classList.remove("bg-primary");
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
         icon.textContent = "–";
-        toggleBtn.classList.add("bg-primary")
+        toggleBtn.classList.add("bg-primary");
       }
     });
   });
