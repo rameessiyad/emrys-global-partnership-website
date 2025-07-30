@@ -24,10 +24,22 @@
 </head>
 
 <body class="relative">
+
+    <!-- floating button desktop -->
     <div
-        class="hidden md:fixed cta-button left-0 top-50 z-50 flex flex-col gap-6 items-center bg-[var(--primary-color)] px-2 py-6 text-white rounded-r-xl">
-        <a href=""><i class="fa-brands fa-whatsapp text-xl text-white"></i></a>
-        <a href="tel:+91 9876543210"><i class="fa-solid fa-phone text-xl text-white"></i></a>
+        class="hidden fixed cta-button left-0 top-120 lg:top-74 z-50 md:flex flex-col gap-6 items-center bg-[var(--primary-color)] px-2 py-6 text-white rounded-r-xl">
+        <a href="https://wa.me/971505791242" target="_blank"><i
+                class="fa-brands fa-whatsapp text-xl text-white"></i></a>
+        <a href="tel:+971 50 579 1242"><i class="fa-solid fa-phone text-xl text-white"></i></a>
+    </div>
+
+    <!-- floating buttons mobile -->
+    <div
+        class="fixed cta-button right-0 bottom-20 z-50 md:hidden flex flex-col gap-6 items-center px-2 py-6 text-white rounded-r-xl">
+        <div class="bg-[var(--primary-color)] text-white p-2 rounded-full"><a href="https://wa.me/971505791242"
+                target="_blank"><i class="fa-brands fa-whatsapp text-xl text-white"></i></a></div>
+        <div class="bg-[var(--primary-color)] text-white p-2 rounded-full"><a href="tel:+971 50 579 1242"><i
+                    class="fa-solid fa-phone text-xl text-white"></i></a></div>
     </div>
 
     <div class="h-screen">
@@ -37,8 +49,8 @@
 
             <!-- navbar-1 -->
             <nav class=" flex justify-between max-w-7xl items-center gap-24 mx-auto">
-                <a href=""><img src="./assets/logo-cropped.svg" alt="logo" width="170px" height="100px"></a>
-                <ul class="flex items-center justify-between gap-8">
+                <a href=""><img src="./assets/logo-cropped.svg" alt="logo" id="logo-img"></a>
+                <ul class="flex  items-center justify-between md:gap-4 text-xs lg:text-base lg:gap-8">
                     <a href="#home">
                         <li class="text-white font-bold nav-underline">Home</li>
                     </a>
@@ -51,6 +63,7 @@
                     <a href="#trusted-brands">
                         <li class="text-white font-bold nav-underline">Trusted Brands</li>
                     </a>
+
                     <a href="#why-emrys">
                         <li class="text-white font-bold nav-underline">Why Emrys</li>
                     </a>
@@ -58,12 +71,20 @@
                         <li class="text-white font-bold nav-underline">FAQ</li>
                     </a>
                 </ul>
-                <div class="bg-[var(--primary-color)] px-4 py-2 flex items-center justify-center rounded-full">
+
+                <!-- large screen -->
+                <div
+                    class="bg-[var(--primary-color)] hidden px-4 py-2 lg:flex items-center justify-center rounded-full">
                     <a href="tel:+971 50 579 1242" class="text-xs font-bold text-white">+971 50 579 1242</a>
                 </div>
+
+                <!-- medium screen -->
+                <div
+                    class="block lg:hidden bg-[var(--primary-color)] p-1 flex items-center justify-center rounded-full">
+                    <a href="https://wa.me/971505791242" target="_blank" class="text-xl font-bold text-white"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
             </nav>
-
-
 
         </header>
 
@@ -93,38 +114,39 @@
         </header>
 
         <!-- Hero Section -->
-        <section id="home" class=" hero-section relative  px-4 ">
+        <section id="home" class=" hero-section relative px-4 py-10 md:py-0">
             <div
                 class="relative w-full h-full flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-10">
 
                 <!-- Text Content -->
-                <div class="max-w-xl text-left space-y-4 mt-12 md:mt-0">
-                    <h1 class="text-white text-2xl md:text-3xl font-bold leading-tight mb-4">
+                <div class="max-w-xl text-left space-y-4 mt-10 md:mt-0">
+                    <h1 class="text-white text-lg md:text-3xl font-bold leading-tight mb-4">
                         Get your Corporate Tax Return filed with
                         <span class="text-[var(--primary-color)]">100% compliance</span>
                         by trusted UAE tax experts.
                     </h1>
-                    <h2 class="text-white text-xl md:text-2xl font-semibold mb-4">
+                    <h2 class="text-white text-md md:text-2xl font-semibold mb-4">
                         Corporate Tax Filing Now at Just
                         <span class="text-[var(--primary-color)]">AED 999!</span>
                     </h2>
-                    <p class="text-white text-lg mb-2 font-medium">
+                    <p class="text-white text-sm mb-2 font-medium">
                         <em>UAE Mainland & Free Zone Companies – Limited-Time Offer</em>
                     </p>
-                    <p class="text-white text-lg font-medium mb-6">
+                    <p class="text-white text-sm font-medium mb-6">
                         <span class="text-white py-1 rounded">Book Free Consultation</span>
                     </p>
-                    <a href="https://wa.me/YOURNUMBER" target="_blank">
-                        <button class="button">Chat on WhatsApp</button>
+                    <a href="https://wa.me/971505791242" target="_blank" class="block w-full sm:w-auto">
+                        <button class="button px-4 py-2 text-sm sm:text-base w-full sm:w-auto">Chat on WhatsApp</button>
                     </a>
                 </div>
 
                 <!-- Hero Image -->
                 <img src="./assets/hero.png" alt="hero-img"
-                    class="hidden md:block w-[300px] md:w-[500px] lg:w-[600px] self-end mt-auto">
+                    class="hidden md:hidden lg:block w-[300px] md:w-[500px] lg:w-[600px] self-end mt-auto">
 
                 <!-- Form Section -->
-                <div class="w-full sm:w-[90%] md:w-[400px] lg:w-[420px] bg-white p-6 rounded-lg shadow-md">
+                <div
+                    class="w-full sm:w-[90%] md:w-[400px] lg:w-[420px] bg-white p-6 rounded-lg shadow-md mb-10 md:mb-0">
                     <h2 class="text-lg font-semibold text-center text-gray-800 mb-4">Get A Free Consultation!</h2>
                     <form class="flex flex-col gap-4">
                         <input type="text" placeholder="Full Name"
@@ -206,7 +228,7 @@
                     class="plan-cards flex flex-col md:flex-row flex-wrap gap-6 items-stretch justify-center py-4 mt-4 md:mt-10">
                     <!-- Emrys Startup -->
                     <div
-                        class="bg-white rounded-xl shadow-md p-6 flex-1 min-w-[280px] max-w-sm border flex flex-col min-h-[500px]">
+                        class="bg-white rounded-xl shadow-md p-6 flex-1 min-w-[280px] max-w-sm border flex flex-col min-h-[500px] mx-auto">
                         <h3 class="text-lg font-semibold text-center">Emrys Startup</h3>
                         <ul class="mt-4 space-y-3 text-base text-gray-700">
                             <li>✔ Corporate Tax consultation</li>
@@ -226,7 +248,7 @@
 
                     <!-- Emrys Affordable  -->
                     <div
-                        class="bg-white border-2 border-[var(--primary-color)] relative rounded-xl shadow-xl shadow-slate-300 drop-shadow-xl p-6 flex-1 min-w-[280px] max-w-sm flex flex-col scale-[1.05] min-h-[520px]">
+                        class="bg-white border-2 border-[var(--primary-color)] relative rounded-xl shadow-xl shadow-slate-300 drop-shadow-xl p-6 flex-1 min-w-[280px] max-w-sm flex flex-col scale-[1.00] md:scale-[1.01] lg:scale-[1.10] min-h-[520px] mx-auto">
                         <div
                             class="bg-[var(--primary-color)] absolute top-0 left-0 w-full h-8 rounded-t-xl flex items-center justify-center">
                             <p class="font-semibold text-white text-sm">Most Popular Plan</p>
@@ -247,7 +269,7 @@
                         </ul>
                         <div class="flex flex-col mt-auto gap-3">
                             <p class="mt-4 text-xl font-bold text-center text-[var(--primary-color)]">999 Only</p>
-                            <a href="https://wa.me/your-number" target="_blank"
+                            <a href="https://wa.me/971505791242" target="_blank"
                                 class="block bg-green-500 text-white text-center py-2 rounded-full font-semibold hover:bg-[var(--primary-color)] transition">
                                 <i class="fa-brands fa-whatsapp text-xl"></i> <span>WhatsApp Now</span>
                             </a>
@@ -256,7 +278,7 @@
 
                     <!-- Emrys Standard -->
                     <div
-                        class="bg-white rounded-xl shadow-md p-6 flex-1 min-w-[280px] max-w-sm border flex flex-col min-h-[520px]">
+                        class="bg-white rounded-xl shadow-md p-6 flex-1 min-w-[280px] max-w-sm border flex flex-col min-h-[520px] mx-auto">
                         <h3 class="text-lg font-semibold text-center">Emrys Standard</h3>
                         <ul class="mt-4 space-y-3 text-base text-gray-700">
                             <li>✔ Internal Overview Report</li>

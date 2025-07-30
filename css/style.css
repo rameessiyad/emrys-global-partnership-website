@@ -61,6 +61,11 @@ html {
     transition: all ease 0.3s;
 }
 
+#logo-img {
+    width: 170px;
+    height: 100px;
+}
+
 .text-head {
     color: var(--text-head-color);
 }
@@ -136,6 +141,27 @@ nav ul li:hover {
 .footer-icons i {
     background-color: #fff;
     border-radius: 50%
+}
+
+/* responsive styles */
+@media screen and (max-width: 768px) {
+    #logo-img {
+        width: 100px;
+        height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 765px) {
+    .hero-section {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .hero-section {
+        height: 110vh;
+    }
 }
 
 @keyframes scrollRight {
