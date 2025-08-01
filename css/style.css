@@ -163,6 +163,11 @@ nav ul li:hover {
         height: 110vh;
     }
 }
+@media screen and (max-width: 500px) {
+    .hero-section {
+        height: 150vh;
+    }
+}
 
 @keyframes scrollRight {
     0% {
