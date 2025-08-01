@@ -170,7 +170,7 @@ nav ul li:hover {
     }
 
     100% {
-        transform: translateX(76%);
+        transform: translateX(78%);
     }
 }
 
@@ -180,6 +180,6 @@ nav ul li:hover {
     }
 
     100% {
-        transform: translateX(-76%);
+        transform: translateX(-78%);
     }
 }
