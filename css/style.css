@@ -163,11 +163,11 @@ nav ul li:hover {
         height: 110vh;
     }
 }
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .hero-section {
         height: 120vh;
     }
-}
+} */
 
 @keyframes scrollRight {
     0% {
