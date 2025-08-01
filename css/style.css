@@ -113,6 +113,11 @@ nav ul li:hover {
     position: relative;
 }
 
+.blink {
+    animation: blink 2s infinite;
+    display: inline-block;
+}
+
 /* brands section styles */
 .scrolling-wrapper {
     animation: scrollRight 20s linear infinite;
@@ -144,7 +149,7 @@ nav ul li:hover {
         width: 100px;
         height: 50px;
     }
-    
+
 }
 
 @media screen and (max-width: 765px) {
@@ -181,5 +186,17 @@ nav ul li:hover {
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
     }
 }
