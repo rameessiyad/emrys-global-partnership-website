@@ -115,11 +115,11 @@ nav ul li:hover {
 
 /* brands section styles */
 .scrolling-wrapper {
-    animation: scrollRight 30s linear infinite;
+    animation: scrollRight 20s linear infinite;
 }
 
 .row-2.scrolling-wrapper {
-    animation: scrollLeft 30s linear infinite;
+    animation: scrollLeft 20s linear infinite;
 }
 
 /* contact form styles */
@@ -170,7 +170,7 @@ nav ul li:hover {
     }
 
     100% {
-        transform: translateX(78%);
+        transform: translateX(50%);
     }
 }
 
@@ -180,6 +180,6 @@ nav ul li:hover {
     }
 
     100% {
-        transform: translateX(-78%);
+        transform: translateX(-50%);
     }
 }
