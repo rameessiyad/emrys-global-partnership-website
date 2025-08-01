@@ -114,9 +114,9 @@
         </header>
 
         <!-- Hero Section -->
-        <section id="home" class=" hero-section relative px-4 py-10 md:py-0">
+        <section id="home" class=" hero-section relative px-4 pt-10 md:py-0 flex items-center justify-center">
             <div
-                class="relative w-full h-full flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-10">
+                class="w-full h-full flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto md:h-screen gap-10">
 
                 <!-- Text Content -->
                 <div class="max-w-xl w-full text-left space-y-4 mt-12 md:mt-0 px-4 sm:px-0">
@@ -146,23 +146,25 @@
 
                 <!-- Form Section -->
                 <div
-                    class="w-full sm:w-[90%] md:w-[400px] lg:w-[420px] bg-white p-6 rounded-lg shadow-md mb-10 md:mb-0">
-                    <h2 class="text-lg font-semibold text-center text-gray-800 mb-4">Get A Free Consultation!</h2>
-                    <form class="flex flex-col gap-4">
+                    class="w-full sm:w-[90%] md:w-[400px] lg:w-[420px] bg-white p-4 sm:p-6 rounded-lg shadow-md mb-10 md:mb-0 mx-auto">
+                    <h2 class="text-base sm:text-lg font-semibold text-center text-gray-800 mb-4">
+                        Get A Free Consultation!
+                    </h2>
+                    <form class="flex flex-col gap-3 sm:gap-4">
                         <input type="text" placeholder="Full Name"
-                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            class="border border-gray-300 rounded-sm px-3 sm:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                             required />
                         <input type="text" placeholder="Company Name"
-                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            class="border border-gray-300 rounded-sm px-3 sm:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                             required />
                         <input type="tel" placeholder="Phone Number"
-                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            class="border border-gray-300 rounded-sm px-3 sm:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                             required />
                         <input type="email" placeholder="Email Address"
-                            class="border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            class="border border-gray-300 rounded-sm px-3 sm:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                             required />
                         <select
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                            class="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                             required>
                             <option value="" disabled selected>Select The Service</option>
                             <option>Corporate Tax Advisory Services</option>
@@ -181,12 +183,13 @@
                         </select>
                         <p class="text-xs text-center text-gray-600">
                             I accept the Terms and Conditions.<br />
-                            <span class="text-red-500">Privacy Policy</span> &
-                            <span class="text-red-500">Terms & Conditions</span>
+                            <span class="text-red-500">Privacy Policy</span> &amp;
+                            <span class="text-red-500">Terms &amp; Conditions</span>
                         </p>
-                        <button type="submit" class="button rounded-md">Submit</button>
+                        <button type="submit" class="button w-full rounded-md">Submit</button>
                     </form>
                 </div>
+
             </div>
         </section>
 
