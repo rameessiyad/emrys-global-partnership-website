@@ -156,6 +156,14 @@ nav ul li:hover {
     .hero-section {
         mi-height: 120vh;
     }
+
+    .scrolling-wrapper {
+        animation: scrollRight 6s linear infinite;
+    }
+
+    .row-2.scrolling-wrapper {
+        animation: scrollLeft 6s linear infinite;
+    }
 }
 
 /* @media screen and (max-width: 625px) {
