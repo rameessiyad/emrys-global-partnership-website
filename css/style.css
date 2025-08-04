@@ -157,16 +157,42 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 765px) {
-    .hero-section {
-        mi-height: 120vh;
-    }
-
     .scrolling-wrapper {
         animation: scrollRight 6s linear infinite;
     }
 
     .row-2.scrolling-wrapper {
         animation: scrollLeft 6s linear infinite;
+    }
+}
+
+@media screen and (max-height: 680px) {
+
+    /* Reduce vertical padding */
+    .hero-section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* Resize hero image */
+    .hero-section img {
+        width: 1050px;
+        height: auto;
+    }
+
+    .hero-section form {
+        gap: 0.5rem;
+    }
+
+    .hero-section input,
+    .hero-section select,
+    .hero-section button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .hero-section .text-xs {
+        font-size: 10px;
     }
 }
 
