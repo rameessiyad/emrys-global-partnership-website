@@ -153,7 +153,15 @@ nav ul li:hover {
 }
 
 /* responsive styles */
-@media screen and (max-width: 1061px) {
+@media screen and (max-width: 1141px) {
+    header .navbar #logo-img {
+        width: 140px
+    }
+
+    header .navbar ul li {
+        font-size: 11px
+    }
+
     .hero-img {
         display: none;
     }
