@@ -178,6 +178,17 @@ nav ul li:hover {
         font-size: 9px
     }
 }
+
+@media screen and (max-width: 940px) {
+    footer .footer-links {
+        flex-direction: column;
+    }
+
+    footer .footer-links div {
+        width: 100%;
+    }
+} 
+
 @media screen and (max-width: 796px) {
      header .navbar ul li {
         font-size: 8px
