@@ -203,6 +203,12 @@ nav ul li:hover {
     }
 }
 
+/* @media screen and (max-width: 912px) {
+    .hero-section {
+        min-height: 80vh;
+    }
+} */
+
 @media screen and (max-width: 796px) {
     header .navbar ul li {
         font-size: 8px
