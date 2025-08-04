@@ -277,6 +277,18 @@ nav ul li:hover {
     }
 }
 
+@media screen and (max-height: 625px) {
+    .text-content {
+        margin-top: 5%;
+    }
+    .hero-text {
+        font-size: 24px;
+    }
+    .form-content {
+        margin-top: 5%
+    }
+}
+
 /* @media screen and (max-width: 625px) {
     .hero-section {
         height: 110vh;
