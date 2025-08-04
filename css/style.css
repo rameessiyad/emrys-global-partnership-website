@@ -113,6 +113,7 @@ nav ul li:hover {
     position: relative;
 }
 
+
 .blink {
     animation: blink 2s infinite;
     display: inline-block;
@@ -168,6 +169,7 @@ nav ul li:hover {
         font-size: 24px;
         margin-top: 26px
     }
+
     .hero-text2 {
         font-size: 20px
     }
@@ -185,6 +187,24 @@ nav ul li:hover {
     .hero-img {
         display: none;
     }
+}
+
+@media screen and (max-width: 1155px) {
+    .hero-section {
+        height: 60vh !important;
+        min-height: unset !important;
+        overflow: hidden;
+    }
+
+    /* .hero-section>div {
+        height: 100% !important;
+    }
+
+    @media screen and (min-width: 768px) {
+        .hero-section>div {
+            height: 100% !important;
+        }
+    } */
 }
 
 @media screen and (max-width: 1046px) {
@@ -281,9 +301,11 @@ nav ul li:hover {
     .text-content {
         margin-top: 5%;
     }
+
     .hero-text {
         font-size: 24px;
     }
+
     .form-content {
         margin-top: 5%
     }
