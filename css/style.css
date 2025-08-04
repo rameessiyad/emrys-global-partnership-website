@@ -249,7 +249,7 @@ nav ul li:hover {
     }
 
      .hero-section {
-        height: 100vh !important;
+        height: 110vh !important;
         min-height: unset !important;
         overflow: hidden;
     }
