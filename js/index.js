@@ -81,3 +81,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+//cta button
+document.addEventListener("DOMContentLoaded", () => {
+  const cta = document.querySelector(".cta-button");
+
+  //initially hide it
+  cta.classList.remove("show");
+
+  window.addEventListener("scroll", () => {
+    const isMobile = window.innerWidth < 768;
+    if (!isMobile && window.scrollY > window.innerHeight) {
+      cta.classList.add("show");
+    } else {
+      cta.classList.remove("show");
+    }
+  });
+});
