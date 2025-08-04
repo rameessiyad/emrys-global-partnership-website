@@ -153,6 +153,12 @@ nav ul li:hover {
 }
 
 /* responsive styles */
+@media screen and (max-width: 1061px) {
+    .hero-img {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #logo-img {
         width: 100px;
