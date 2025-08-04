@@ -118,6 +118,10 @@ nav ul li:hover {
     display: inline-block;
 }
 
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
 /* brands section styles */
 .scrolling-wrapper {
     animation: scrollRight 20s linear infinite;
@@ -206,5 +210,19 @@ nav ul li:hover {
 
     50% {
         opacity: 0.1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
