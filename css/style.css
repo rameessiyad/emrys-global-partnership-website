@@ -122,6 +122,11 @@ nav ul li:hover {
     animation: float 3s ease-in-out infinite;
 }
 
+.cta-button.show {
+    animation: slideInLeft 1s ease-in-out;
+    display: flex !important;
+}
+
 /* brands section styles */
 .scrolling-wrapper {
     animation: scrollRight 20s linear infinite;
@@ -217,7 +222,7 @@ nav ul li:hover {
     }
 }
 
-@keyFrames scrollLeft {
+@keyframes scrollLeft {
     0% {
         transform: translateX(0);
     }
@@ -250,5 +255,17 @@ nav ul li:hover {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
