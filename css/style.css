@@ -159,6 +159,20 @@ nav ul li:hover {
     }
 }
 
+@media screen and (max-width: 1212px) {
+    .text-content {
+        margin-top: 6%;
+    }
+
+    .hero-text {
+        font-size: 24px;
+        margin-top: 26px
+    }
+    .hero-text2 {
+        font-size: 20px
+    }
+}
+
 @media screen and (max-width: 1168px) {
     header .navbar #logo-img {
         width: 140px
