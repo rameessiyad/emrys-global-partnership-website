@@ -130,6 +130,8 @@ nav ul li:hover {
 
 /* brands section styles */
 .scrolling-wrapper {
+    /* display: flex;
+    width: max-content; */
     animation: scrollRight 20s linear infinite;
 }
 
@@ -248,7 +250,7 @@ nav ul li:hover {
         font-size: 8px
     }
 
-     .hero-section {
+    .hero-section {
         height: 110vh !important;
         min-height: unset !important;
         overflow: hidden;
@@ -317,6 +319,13 @@ nav ul li:hover {
     }
 }
 
+@media screen and (max-width: 385px) {
+    .hero-section {
+        height: 120vh !important;
+        min-height: unset !important;
+    }
+}
+
 /* @media screen and (max-width: 625px) {
     .hero-section {
         height: 110vh;
@@ -330,7 +339,7 @@ nav ul li:hover {
 
 @keyframes scrollRight {
     0% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 
     100% {
