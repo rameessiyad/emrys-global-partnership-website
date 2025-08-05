@@ -156,6 +156,18 @@ nav ul li:hover {
 }
 
 /* responsive styles */
+@media screen and (max-width: 1335px) {
+    .faq-container {
+        max-width: 1190px;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    .faq-container {
+        max-width: 1120px;
+    }
+}
+
 @media screen and (max-width: 1248px) {
     header .navbar ul li {
         font-size: 14px
@@ -188,6 +200,10 @@ nav ul li:hover {
 
     .hero-img {
         display: none;
+    }
+
+    .faq-container {
+        max-width: 900px;
     }
 }
 
@@ -272,11 +288,12 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 765px) {
-      .hero-section {
+    .hero-section {
         height: 100vh !important;
         min-height: unset !important;
         overflow: hidden;
     }
+
     .scrolling-wrapper {
         animation: scrollRight 6s linear infinite;
     }
@@ -363,6 +380,7 @@ nav ul li:hover {
         height: 124vh !important;
         min-height: unset !important;
     }
+
     .hero-text {
         margin-top: 48px;
     }
