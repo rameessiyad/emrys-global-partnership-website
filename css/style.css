@@ -379,10 +379,11 @@ nav ul li:hover {
     .hero-section {
         height: 110vh !important;
         min-height: unset !important;
+        padding-top: 50px;
     }
 
     .text-content {
-        margin-top: 10px;
+        margin-top: 24px;
     }
 }
 
