@@ -375,6 +375,17 @@ nav ul li:hover {
     }
 }
 
+@media screen and (max-width: 393px) {
+    .hero-section {
+        height: 110vh !important;
+        min-height: unset !important;
+    }
+
+    .text-content {
+        margin-top: 10px;
+    }
+}
+
 @media screen and (max-width: 385px) {
     .hero-section {
         height: 124vh !important;
