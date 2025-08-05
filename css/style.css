@@ -251,7 +251,7 @@ nav ul li:hover {
     }
 
     .hero-section {
-        height: 110vh !important;
+        height: 80vh !important;
         min-height: unset !important;
         overflow: hidden;
     }
@@ -263,9 +263,20 @@ nav ul li:hover {
         height: 50px;
     }
 
+    .hero-section {
+        height: 70vh !important;
+        min-height: unset !important;
+        overflow: hidden;
+    }
+
 }
 
 @media screen and (max-width: 765px) {
+      .hero-section {
+        height: 100vh !important;
+        min-height: unset !important;
+        overflow: hidden;
+    }
     .scrolling-wrapper {
         animation: scrollRight 6s linear infinite;
     }
@@ -319,13 +330,48 @@ nav ul li:hover {
     }
 }
 
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 540px) {
     .hero-section {
         height: 120vh !important;
         min-height: unset !important;
     }
+}
+
+@media screen and (max-width: 431px) {
+    .hero-section {
+        height: 100vh !important;
+        min-height: unset !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .hero-section {
+        height: 100vh !important;
+        min-height: unset !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-section {
+        height: 110vh !important;
+        min-height: unset !important;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .hero-section {
+        height: 124vh !important;
+        min-height: unset !important;
+    }
     .hero-text {
         margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .hero-section {
+        height: 110vh !important;
+        min-height: unset !important;
     }
 }
 
