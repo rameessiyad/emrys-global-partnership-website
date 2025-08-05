@@ -87,22 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const cta = document.querySelector(".cta-button");
   const faqSection = document.querySelector("#faq");
 
-  const isInViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return rect.top <= window.innerHeight && rect.bottom >= 0;
-  };
+  //initially hide it
+  cta.classList.remove("show");
 
-  const handleScroll = () => {
+  window.addEventListener("scroll", () => {
     const isMobile = window.innerWidth < 768;
-    const faqInView = isInViewport(faqSection);
-
-    if (!isMobile && window.scrollY > window.innerHeight && !faqInView) {
+    if (!isMobile && window.scrollY > window.innerHeight) {
       cta.classList.add("show");
     } else {
       cta.classList.remove("show");
     }
-  };
-
-  window.addEventListener("scroll", handleScroll);
-  handleScroll(); // run once initially
+  });
 });
