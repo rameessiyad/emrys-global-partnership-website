@@ -356,14 +356,21 @@ nav ul li:hover {
 
 @media screen and (max-width: 431px) {
     .hero-section {
-        height: 100vh !important;
+        height: 104vh !important;
         min-height: unset !important;
     }
 }
 
 @media screen and (max-width: 415px) {
     .hero-section {
-        height: 100vh !important;
+        height: 101vh !important;
+        min-height: unset !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .hero-section {
+        height: 105vh !important;
         min-height: unset !important;
     }
 }
