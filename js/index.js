@@ -24,30 +24,35 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleBtn.addEventListener("click", () => {
       const content = toggleBtn.nextElementSibling;
       const icon = toggleBtn.querySelector(".faq-icon");
-      const isOpen = content.style.maxHeight;
+      const isOpen = content.classList.contains("open");
 
-      // Optional: Accordion behavior – close others
-      const allContents = document.querySelectorAll(".faq-content");
-      const allIcons = document.querySelectorAll(".faq-icon");
-      const allToggles = document.querySelectorAll(".faq-toggle");
+      // Close all others
+      document.querySelectorAll(".faq-content").forEach((el) => {
+        el.classList.remove("open");
+        el.classList.remove("max-h-[524px]");
+        el.style.maxHeight = null;
+        el.style.paddingTop = "0px";
+        el.style.paddingBottom = "0px";
+      });
+      document
+        .querySelectorAll(".faq-icon")
+        .forEach((el) => (el.textContent = "+"));
+      document
+        .querySelectorAll(".faq-toggle")
+        .forEach((el) => el.classList.remove("bg-primary"));
 
-      allContents.forEach((el) => {
-        if (el !== content) el.style.maxHeight = null;
-      });
-      allIcons.forEach((el) => {
-        if (el !== icon) el.textContent = "+";
-      });
-      allToggles.forEach((el) => {
-        if (el !== toggleBtn) el.classList.remove("bg-primary");
-      });
+      if (!isOpen) {
+        content.classList.add("open");
 
-      // Toggle clicked one
-      if (isOpen) {
-        content.style.maxHeight = null;
-        icon.textContent = "+";
-        toggleBtn.classList.remove("bg-primary");
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        // 1. Apply padding first
+        content.style.paddingTop = "16px";
+        content.style.paddingBottom = "16px";
+
+        // 2. Then recalculate height after padding is applied
+        requestAnimationFrame(() => {
+          content.classList.add("max-h-[524px]");
+        });
+
         icon.textContent = "–";
         toggleBtn.classList.add("bg-primary");
       }
