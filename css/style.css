@@ -324,6 +324,9 @@ nav ul li:hover {
         height: 120vh !important;
         min-height: unset !important;
     }
+    .hero-text {
+        margin-top: 48px;
+    }
 }
 
 /* @media screen and (max-width: 625px) {
