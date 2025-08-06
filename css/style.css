@@ -327,6 +327,12 @@ nav ul li:hover {
     }
 }
 
+/* @media screen and (max-width: 768px) and (min-height: 698px) {
+    .hero-section {
+        height: 119vh !important;
+    }
+} */
+
 @media screen and (max-width: 765px) {
     .hero-section {
         height: 100vh !important;
@@ -342,6 +348,12 @@ nav ul li:hover {
         animation: scrollLeft 6s linear infinite;
     }
 }
+
+/* @media screen and (max-width: 768px) and (min-height: 698px) {
+    .hero-section {
+        height: 122vh !important;
+    }
+} */
 
 @media screen and (max-height: 680px) {
 
