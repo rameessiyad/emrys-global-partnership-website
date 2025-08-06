@@ -299,6 +299,8 @@ nav ul li:hover {
     }
 }
 
+
+
 @media screen and (max-width: 768px) {
     #logo-img {
         width: 100px;
@@ -311,6 +313,18 @@ nav ul li:hover {
         overflow: hidden;
     }
 
+}
+
+/* ipad mini */
+@media screen and (max-width: 768px) and (min-height: 1024px) {
+    .hero-section {
+        height: 58vh !important;
+        min-height: unset !important;
+    }
+
+    .hero-section>div {
+        margin-top: 3.2rem;
+    }
 }
 
 @media screen and (max-width: 765px) {
