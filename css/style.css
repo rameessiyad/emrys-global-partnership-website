@@ -235,6 +235,18 @@ nav ul li:hover {
     }
 }
 
+/* ipad pro */
+@media screen and (max-width: 1024px) and (min-height: 1366px) {
+    .hero-section {
+        height: 47vh !important;
+        min-height: unset !important;
+    }
+
+    .hero-section>div {
+        margin-top: 1.4rem;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     header .navbar {
         display: none;
@@ -260,6 +272,20 @@ nav ul li:hover {
         min-height: 80vh;
     }
 } */
+
+/* ipad Air */
+@media screen and (max-width: 821px) and (min-height: 1180px) {
+    .hero-section {
+        height: 51vh !important;
+        min-height: unset !important;
+        overflow: hidden
+    }
+
+    .hero-section>div {
+        margin-top: 4rem;
+    }
+
+}
 
 @media screen and (max-width: 796px) {
     header .navbar ul li {
