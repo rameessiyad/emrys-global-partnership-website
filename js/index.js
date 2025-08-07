@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //form submission ajax
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("consultationForm");
+  const messageDiv = document.getElementById("formMessage");
 
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -76,12 +77,19 @@ document.addEventListener("DOMContentLoaded", function () {
       })
         .then((response) => response.text())
         .then((data) => {
-          alert(data);
+          console.log(data);
           form.reset();
+
+          messageDiv.innerText = data;
+          messageDiv.classList.remove("text-red-500");
+          messageDiv.classList.add("text-green-600", "font-medium");
         })
         .catch((error) => {
           console.error("Error:", error);
-          alert("Something went wrong. Please try again later.");
+          messageDiv.innerText =
+            "Something went wrong. Please try again later.";
+          messageDiv.classList.remove("text-green-600");
+          messageDiv.classList.add("text-red-500", "font-medium");
         });
     });
   }
