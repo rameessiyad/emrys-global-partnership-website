@@ -401,15 +401,15 @@ nav ul li:hover {
 
 @media screen and (max-width: 540px) {
     .hero-section {
-        height: 120vh !important;
-        min-height: unset !important;
+        height: auto !important;
+        /* min-height: unset !important; */
     }
 }
 
 @media screen and (max-width: 431px) {
     .hero-section {
-        height: 104vh !important;
-        min-height: unset !important;
+        height: auto !important;
+        /* min-height: unset !important; */
     }
 }
 
@@ -448,8 +448,8 @@ nav ul li:hover {
 
 @media screen and (max-width: 385px) {
     .hero-section {
-        height: 124vh !important;
-        min-height: unset !important;
+        height: auto !important;
+        /* min-height: unset !important; */
     }
 
     .hero-text {
