@@ -308,8 +308,8 @@ nav ul li:hover {
     }
 
     .hero-section {
-        height: 70vh !important;
-        min-height: unset !important;
+        height: auto !important;
+        /* min-height: unset !important; */
         overflow: hidden;
     }
 
@@ -318,8 +318,8 @@ nav ul li:hover {
 /* ipad mini */
 @media screen and (max-width: 768px) and (min-height: 1024px) {
     .hero-section {
-        height: 58vh !important;
-        min-height: unset !important;
+        height: auto !important;
+        padding: 50px 0;
     }
 
     .hero-section>div {
@@ -335,8 +335,8 @@ nav ul li:hover {
 
 @media screen and (max-width: 765px) {
     .hero-section {
-        height: 100vh !important;
-        min-height: unset !important;
+        height: auto !important;
+        /* min-height: unset !important; */
         overflow: hidden;
     }
 
