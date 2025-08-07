@@ -399,41 +399,6 @@ nav ul li:hover {
     }
 }
 
-@media screen and (max-width: 540px) {
-    .hero-section {
-        height: auto !important;
-        /* min-height: unset !important; */
-    }
-}
-
-@media screen and (max-width: 431px) {
-    .hero-section {
-        height: auto !important;
-        /* min-height: unset !important; */
-    }
-}
-
-@media screen and (max-width: 415px) {
-    .hero-section {
-        height: 101vh !important;
-        min-height: unset !important;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .hero-section {
-        height: 105vh !important;
-        min-height: unset !important;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .hero-section {
-        height: 110vh !important;
-        min-height: unset !important;
-    }
-}
-
 @media screen and (max-width: 393px) {
     .hero-section {
         height: 110vh !important;
