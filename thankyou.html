@@ -32,6 +32,76 @@
                     class="fa-solid fa-phone text-lg text-white"></i></a></div>
     </div>
 
+    <!-- header-section -->
+    <header class="header hidden lg:block">
+        <!-- navbar-section -->
+
+        <!-- navbar-1 -->
+        <nav class="navbar flex justify-between max-w-7xl items-center gap-24 mx-auto">
+            <a href="https://emrysglobal.ae/"><img src="./assets/logo-cropped.svg" alt="logo" id="logo-img"></a>
+            <ul class="flex  items-center justify-between md:gap-4 text-xs lg:text-base lg:gap-8">
+                <a href="#home">
+                    <li class="text-white font-bold nav-underline">Home</li>
+                </a>
+                <a href="#why-the-corporate">
+                    <li class="text-white font-bold nav-underline">Why The Corporate</li>
+                </a>
+                <a href="#our-plans">
+                    <li class="text-white font-bold nav-underline">Our Plans</li>
+                </a>
+                <a href="#trusted-brands">
+                    <li class="text-white font-bold nav-underline">Trusted Brands</li>
+                </a>
+
+                <a href="#why-emrys">
+                    <li class="text-white font-bold nav-underline">Why Emrys</li>
+                </a>
+                <a href="#faq">
+                    <li class="text-white font-bold nav-underline">FAQ</li>
+                </a>
+            </ul>
+
+            <!-- large screen -->
+            <div
+                class="bg-[var(--primary-color)] hidden px-4 py-2 lg:flex items-center justify-center rounded-full number-nav">
+                <a href="tel:+971 50 579 1242" class="text-xs font-bold text-white">+971 50 579 1242</a>
+            </div>
+
+            <!-- medium screen -->
+            <div
+                class="block lg:hidden bg-[var(--primary-color)] p-1 flex items-center justify-center rounded-full whatsapp-nav">
+                <a href="https://wa.me/971505791242" target="_blank" class="text-xl font-bold text-white"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- mobile navbar  -->
+    <header class="mobile-navbar lg:hidden bg-[var(--secondary-color)] p-4 h-18 z-50 fixed w-full">
+        <nav class="flex items-center justify-between gap-4">
+            <a href=""><img src="./assets/logo-cropped.svg" alt="logo" width="100px" height="100px"></a>
+            <div class="flex items-center gap-2">
+                <a href="tel:+971 50 579 1242" class="text-xs font-bold text-white">+971 50 579 1242</a>
+                <div id="menuToggle"
+                    class="bg-[var(--primary-color)] p-2 flex items-center justify-center rounded-full cursor-pointer">
+                    <i class="fa fa-bars text-white"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobileNavLinks"
+            class="mobile-menu-wrapper overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out flex-col bg-[var(--primary-color)] text-white p-4 space-y-4 mt-4">
+            <a href="#home" class="block focus:text-[var(--primary-color)]">Home</a>
+            <a href="#why-the-corporate" class="block focus:text-[var(--primary-color)]">Why The Corporate</a>
+            <a href="#our-plans" class="block focus:text-[var(--primary-color)]">Our Plans</a>
+            <a href="#trusted-brands" class="block focus:text-[var(--primary-color)]">Trusted Brands</a>
+            <a href="#why-emrys" class="block focus:text-[var(--primary-color)]">Why Emrys</a>
+            <a href="#faq" class="block focus:text-[var(--primary-color)]">FAQ</a>
+        </div>
+
+    </header>
+
     <script src="./js/index.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
