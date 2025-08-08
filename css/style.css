@@ -456,6 +456,11 @@ nav ul li:hover {
     .text-content {
         margin-top: 24px;
     }
+
+    .thankyou-section{
+        height: 110vh !important;
+        min-height: unset !important;
+    }
 }
 
 @media screen and (max-width: 385px) {
