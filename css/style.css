@@ -254,6 +254,10 @@ nav ul li:hover {
     .thankyou-content {
         padding-bottom: 20rem;
     }
+
+    .contact-box {
+        width: 100%
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -462,6 +466,13 @@ nav ul li:hover {
 
     .hero-text {
         margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .thankyou-section{
+        height: 111vh !important;
+        min-height: unset !important;
     }
 }
 
