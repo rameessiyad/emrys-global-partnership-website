@@ -80,7 +80,7 @@
     </header>
 
     <!-- mobile navbar  -->
-    <header class="mobile-navbar lg:hidden bg-[var(--secondary-color)] p-4 h-18 z-50 fixed w-full">
+    <header class="mobile-navbar lg:hidden bg-[var(--secondary-color)] p-4 h-18 z-50 fixed w-full" style="position: fixed;">
         <nav class="flex items-center justify-between gap-4">
             <a href=""><img src="./assets/logo-cropped.svg" alt="logo" width="100px" height="100px"></a>
             <div class="flex items-center gap-2">
@@ -106,10 +106,10 @@
 
     <div class="h-[90vh]">
         <!-- Thank You Section -->
-        <section class="flex flex-col items-center justify-center text-center min-h-screen px-4 mt-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Thank You!!</h1>
+        <section class="flex flex-col items-center md:justify-center text-center min-h-screen px-4 pt-32 md:pt-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Thank You!!</h1>
             <!-- Tick Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 mb-6" fill="none" viewBox="0 0 24 24"
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" style="color: var(--primary-color);">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
             </svg>
@@ -140,14 +140,16 @@
                 width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
         </div> -->
-        <div class="w-6xl px-14 py-2 h-36 bg-[var(--primary-color)] absolute -top-22 flex items-center justify-center">
+        <!-- desktop -->
+        <div
+            class="hidden md:block w-6xl px-14 py-2 h-36 bg-[var(--primary-color)] absolute -top-22 flex items-center justify-center">
             <div class="flex flex-row items-center justify-start gap-10 py-4 w-full">
                 <div class="max-w-md">
                     <h1 class="text-2xl md:text-3xl font-bold">
                         Get Your Free Accounting or Tax Consultation
                     </h1>
                 </div>
-                <div class="p-6 bg-white rounded-full shadow-lg text-yellow"><a href="tel:+971505791242"><img
+                <div class="p-6 bg-white rounded-full shadow-lg"><a href="tel:+971505791242"><img
                             src="./assets/telephone-inbound-svgrepo-com 1.svg" alt="call" class="w-12"></a></div>
                 <div>
                     <div class="flex flex-col items-start justify-center">
@@ -155,6 +157,30 @@
                                     class="fa-brands fa-whatsapp"></i></span> +971505791242</a>
                         <a href="mailto:info@emrysglobal.ae"><span class="text-xl"><i
                                     class="fa-solid fa-envelope"></i></span> info@emrysglobal.ae"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div
+            class="block md:hidden w-[80%] px-6 py-6 h-auto bg-[var(--primary-color)] absolute -top-32 flex items-center justify-center">
+            <div class="flex flex-col gap-4 justify-start py-4 w-full">
+                <div class="">
+                    <h1 class="text-base font-semibold">
+                        Get Your Free Accounting or Tax Consultation
+                    </h1>
+                </div>
+                <div class="flex flex-row items-center justify-between gap-4">
+                    <div class="p-3 bg-white rounded-full shadow-lg "><a href="tel:+971505791242"><img
+                                src="./assets/telephone-inbound-svgrepo-com 1.svg" alt="call" class="w-6"></a></div>
+                    <div>
+                        <div class="flex flex-col items-start justify-center text-xs bg-blue-200 w-32">
+                            <a href="https://wa.me/971505791242" target="_blank"><span class="text-xs"><i
+                                        class="fa-brands fa-whatsapp"></i></span> +971505791242</a>
+                            <a href="mailto:info@emrysglobal.ae"><span class="text-xs"><i
+                                        class="fa-solid fa-envelope"></i></span> info@emrysglobal.ae"</p>
+                        </div>
                     </div>
                 </div>
             </div>
