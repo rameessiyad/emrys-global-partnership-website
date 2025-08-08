@@ -474,6 +474,13 @@ nav ul li:hover {
     }
 }
 
+@media screen and (max-width: 382px) and (min-height: 628px) {
+    .thankyou-section{
+        height: 116vh !important;
+        min-height: unset !important;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .thankyou-section{
         height: 111vh !important;
