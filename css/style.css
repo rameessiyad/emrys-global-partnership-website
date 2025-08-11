@@ -52,7 +52,7 @@ html {
 
 .header {
     background: transparent;
-    padding: 20px;
+    padding: 8px 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ html {
 }
 
 #logo-img {
-    width: 170px;
+    width: 140px;
     height: 100px;
 }
 
@@ -491,6 +491,25 @@ nav ul li:hover {
 @media screen and (max-width: 345px) {
     .hero-section {
         height: 110vh !important;
+        min-height: unset !important;
+    }
+}
+
+@media screen and (max-height: 674px) {
+    .thankyou-section {
+        height: 110vh !important;
+        min-height: unset !important;
+    }
+}
+@media screen and (max-height: 650px) {
+    .thankyou-section {
+        height: 110vh !important;
+        min-height: unset !important;
+    }
+}
+@media screen and (max-height: 610px) {
+    .thankyou-section {
+        height: 114vh !important;
         min-height: unset !important;
     }
 }
