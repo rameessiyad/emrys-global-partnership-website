@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
           console.log(data);
           form.reset();
-          window.location.href = "../thankyou.html";
+          window.location.href = "/thank-you";
         })
         .catch((error) => {
           console.error("Error:", error);
