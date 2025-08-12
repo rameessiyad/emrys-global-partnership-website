@@ -78,6 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
+      //  Check if reCAPTCHA is completed
+      if (grecaptcha.getResponse().length === 0) {
+        alert("Please verify that you are not a robot.");
+        return;
+      }
+
       const formData = new FormData(this);
 
       fetch("sendMail.php", {

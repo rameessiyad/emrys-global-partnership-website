@@ -235,10 +235,28 @@ nav ul li:hover {
     }
 }
 
+
+
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header .navbar {
+        display: none;
+    }
+
+    header .mobile-navbar {
+        display: block;
+    }
+}
+
 /* ipad pro */
 @media screen and (max-width: 1024px) and (min-height: 1366px) {
     .hero-section {
-        height: 47vh !important;
+        height: 54vh !important;
         min-height: unset !important;
     }
 
@@ -260,16 +278,6 @@ nav ul li:hover {
     }
 }
 
-@media screen and (max-width: 1023px) {
-    header .navbar {
-        display: none;
-    }
-
-    header .mobile-navbar {
-        display: block;
-    }
-}
-
 @media screen and (max-width: 940px) {
     footer .footer-links {
         flex-direction: column;
@@ -285,6 +293,7 @@ nav ul li:hover {
         height: 45vh !important;
         min-height: unset !important;
     }
+
     .thankyou-content {
         padding-top: 7rem;
     }
@@ -293,7 +302,7 @@ nav ul li:hover {
 /* ipad Air */
 @media screen and (max-width: 821px) and (min-height: 1180px) {
     .hero-section {
-        height: 51vh !important;
+        height: 58vh !important;
         min-height: unset !important;
         overflow: hidden
     }
@@ -306,7 +315,8 @@ nav ul li:hover {
         height: 51vh !important;
         min-height: unset !important;
     }
-    .thankyou-content{
+
+    .thankyou-content {
         padding-top: 7rem;
     }
 
@@ -333,8 +343,8 @@ nav ul li:hover {
     }
 
     .hero-section {
-        height: auto !important;
-        /* min-height: unset !important; */
+        height: 108vh !important;
+        min-height: unset !important;
         overflow: hidden;
     }
 
@@ -343,8 +353,9 @@ nav ul li:hover {
 /* ipad mini */
 @media screen and (max-width: 768px) and (min-height: 1024px) {
     .hero-section {
-        height: auto !important;
-        padding: 50px 0;
+        height: 70vh !important;
+        /* padding: 50px 0; */
+        min-height: unset !important;
     }
 
     .hero-section>div {
@@ -433,14 +444,14 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 431px) and (min-height: 932px) {
-    .thankyou-section{
+    .thankyou-section {
         height: 78vh !important;
         min-height: unset !important;
     }
 }
 
 @media screen and (max-width: 412px) and (min-height: 915px) {
-    .thankyou-section{
+    .thankyou-section {
         height: 78vh !important;
         min-height: unset !important;
     }
@@ -448,7 +459,7 @@ nav ul li:hover {
 
 @media screen and (max-width: 393px) {
     .hero-section {
-        height: 110vh !important;
+        height: auto !important;
         min-height: unset !important;
         padding-top: 50px;
     }
@@ -457,11 +468,12 @@ nav ul li:hover {
         margin-top: 24px;
     }
 
-    .thankyou-section{
+    .thankyou-section {
         height: 110vh !important;
         min-height: unset !important;
     }
 }
+
 
 @media screen and (max-width: 385px) {
     .hero-section {
@@ -475,14 +487,14 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 382px) and (min-height: 628px) {
-    .thankyou-section{
+    .thankyou-section {
         height: 116vh !important;
         min-height: unset !important;
     }
 }
 
 @media screen and (max-width: 376px) {
-    .thankyou-section{
+    .thankyou-section {
         height: 111vh !important;
         min-height: unset !important;
     }
@@ -501,16 +513,24 @@ nav ul li:hover {
         min-height: unset !important;
     }
 }
+
 @media screen and (max-height: 650px) {
     .thankyou-section {
         height: 110vh !important;
         min-height: unset !important;
     }
 }
+
 @media screen and (max-height: 610px) {
     .thankyou-section {
         height: 114vh !important;
         min-height: unset !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-section {
+        height: auto !important;
     }
 }
 
