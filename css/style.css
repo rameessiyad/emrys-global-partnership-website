@@ -458,6 +458,12 @@ nav ul li:hover {
     }
 }
 
+@media screen and (max-width: 426px) {
+    .hero-section {
+        padding-top: 10% !important;
+    }
+}
+
 @media screen and (max-width: 412px) and (min-height: 915px) {
     .thankyou-section {
         height: 78vh !important;
