@@ -60,6 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//form phone number validation
+let phoneInputBox = document.getElementById("phone");
+
+phoneInputBox.addEventListener("input", () => {
+  if (!/^\d*$/.test(phoneInputBox.value)) {
+    alert("Please enter a valid phone number");
+    phoneInputBox.value = phoneInputBox.value.replace(/\D/g, "");
+  }
+});
+
 //form submission ajax
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("consultationForm");
@@ -79,11 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log(data);
           form.reset();
           window.location.href = "../thankyou.html";
-        
         })
         .catch((error) => {
           console.error("Error:", error);
-         
         });
     });
   }
